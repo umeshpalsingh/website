@@ -1,0 +1,73 @@
+$color-secondary: rgb(0, 255, 255);
+
+.header {
+    color: #eee;
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: 2fr 1fr;
+    padding: 5% 15%;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgba(transparent, .1);
+
+    //Lazy Load Component to show pacman loading animation
+    animation-name: lazyLoad;
+    animation-duration: 3s;
+    transition: all 2s;
+}
+
+.heading {
+
+    &_small {
+        font-family: 'Roboto Mono';
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-left: 3px;
+        color: $color-secondary;
+    }
+
+    &_big {
+        font-size: 3.75rem;
+    }
+
+    &_sub {
+        font-size: 3.25rem;
+        opacity: .8;
+    }
+
+    &_big,
+    &_sub {
+        font-weight: 900;
+        background: linear-gradient(121.57deg, #FFFFFF 20.80%, rgba(255, 255, 255, 0.66) 60.77%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.description {
+    max-width: 85%;
+    margin: 20px 1px 40px;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    opacity: .7;
+    word-spacing: 2px;
+}
+
+.bgAnimation {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes lazyLoad {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,62 @@
+$color-white: rgba(255, 255, 255, 1);
+$color-black: rgba(0, 0, 0, 1);
+$color-secondary: rgb(0, 255, 255);
+
+.navigation {
+    margin: 0 auto;
+    background: transparent;
+    padding: 20px 15%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+
+    & .logo {
+        //to stay this logo on the left 
+        margin-right: auto;
+        cursor: pointer;
+
+        h1 {
+            font-family: -apple-system, Lato, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #eee;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.navList {
+    padding-top: 5px;
+}
+
+.navItem {
+    list-style: none;
+    margin: 0 10px;
+    display: inline-block;
+
+    a {
+
+        span {
+            color: $color-secondary;
+        }
+
+        &:link,
+        &:visited {
+            color: rgba($color-white, .8);
+            font-family: 'Roboto Mono';
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 0.8125rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all .4s;
+        }
+
+        &:hover,
+        &:active {
+            color: rgba($color-secondary, 1);
+
+        }
+
+    }
+}

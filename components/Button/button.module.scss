@@ -1,0 +1,21 @@
+$color-secondary: rgb(0, 255, 255);
+
+
+.button {
+    display: inline-block;
+    padding: 1.25rem 2.5rem;
+    text-decoration: none;
+    color: $color-secondary;
+    font-size: .875rem; //14px
+    font-family: 'Roboto Mono';
+    border: 1px solid $color-secondary;
+    line-height: 1;
+    background: transparent;
+    border-radius: 4px;
+    transition: all .4s;
+
+    &:hover,
+    &:visited {
+        background: rgba($color-secondary, .1);
+    }
+}
