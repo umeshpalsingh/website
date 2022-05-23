@@ -8,7 +8,6 @@ $color-secondary: rgb(0, 255, 255);
     padding: 5% 15%;
     max-width: 100%;
     margin: 0 auto;
-    background-color: rgba(transparent, .1);
 
     //Lazy Load Component to show pacman loading animation
     animation-name: lazyLoad;
@@ -31,7 +30,7 @@ $color-secondary: rgb(0, 255, 255);
     }
 
     &_sub {
-        font-size: 3.25rem;
+        font-size: 3rem;
         opacity: .8;
     }
 

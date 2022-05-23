@@ -24,7 +24,7 @@ body {
 
 body {
     background-color: rgba(15, 25, 35, 1);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', -apple-system, 'Segoe UI', sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
     line-height: 1.5;
@@ -33,6 +33,7 @@ body {
     &::-webkit-scrollbar {
         width: 0;
     }
+
 }
 
 img,
@@ -98,10 +99,13 @@ h6 {
 
     .small-msg {
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 700;
         margin: 0 auto 50px;
     }
 }
+
+
+/*------- Pacman loading styles ---------*/
 
 .loader-active {
     display: block;

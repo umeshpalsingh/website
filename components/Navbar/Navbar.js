@@ -1,5 +1,7 @@
 import { logo, navigation, navItem, navList } from './navbar.module.scss';
-import Link from "next/link"
+import Link from "next/link";
+import Logo from '../../public/images/ups.svg';
+import Image from 'next/image';
 
 const Navbar = () => {
 
@@ -7,21 +9,21 @@ const Navbar = () => {
         <nav className={navigation}>
             <div id='logo' className={logo}>
                 <Link href='/'>
-                    <h1>Portfolio</h1>
+                    <Image src={Logo} alt="Logo" width='40px' height='30px' />
                 </Link>
             </div>
             <ul className={navList}>
                 <li className={navItem}>
-                    <Link href="/about"><a><span>01. </span>About</a></Link>
+                    <Link href="/about"><a>About</a></Link>
                 </li>
                 <li className={navItem}>
-                    <Link href="/projects"><a><span>02. </span>Projects</a></Link>
+                    <Link href="/projects"><a>Projects</a></Link>
                 </li>
                 <li className={navItem}>
-                    <Link href="/contact"><a><span>03. </span>Contact</a></Link>
+                    <Link href="/contact"><a>Contact</a></Link>
                 </li>
                 <li className={navItem}>
-                    <Link href="/"><a><span>04. </span>Blog</a></Link>
+                    <Link href="/"><a>Blog</a></Link>
                 </li>
             </ul>
         </nav>

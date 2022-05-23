@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "animate.css": "^4.1.1",
     "loaders.css": "^0.1.2",
     "next": "12.1.6",
     "node-sass": "^7.0.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-hot-toast": "^2.2.0",
     "react-loaders": "^3.0.1",
     "react-rough-notation": "^1.0.2"
   },

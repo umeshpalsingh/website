@@ -14,7 +14,7 @@ export default function Hero() {
                     <br />
                     <span className={heading_sub}>
                         I build things for the
-                        <RoughNotation strokeWidth='2' animationDelay='3000' animationDuration='2000' type="underline" show="true"> web</RoughNotation>.
+                        <RoughNotation strokeWidth='2' animationDelay='3000' animationDuration='2000' type="underline" show="true"> web.</RoughNotation>
                     </span>
                 </h1>
                 <p className={description}>
